@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.AmazonPage;
 import utilities.Driver;
-import utilities.ReusableMEthods;
 
 public class C01_SoftAssert {
 

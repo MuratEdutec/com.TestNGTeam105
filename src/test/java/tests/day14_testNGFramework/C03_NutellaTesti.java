@@ -11,8 +11,8 @@ import utilities.Driver;
 
 public class C03_NutellaTesti {
 
-    @Test
-    public void test01(){
+    @Test (groups = "minireg1")
+    public void test01() {
 
         // amazon ana sayfaya gidin
         Driver.getDriver().get("https://www.amazon.com");
@@ -39,7 +39,7 @@ public class C03_NutellaTesti {
 
         Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
 
-        Driver.closeDriver();
+        Driver.quitDriver();
     }
 
 

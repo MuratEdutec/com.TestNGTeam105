@@ -74,8 +74,8 @@ public class C02_NegatifLoginTesti {
         qualitydemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword"));
 
         WebElement cookieKabul = Driver.getDriver().findElement(By.xpath("//*[text()='Accept']"));
-        cookieKabul.click();
-        ReusableMethods.bekle(2);
+        //cookieKabul.click();
+        ReusableMethods.bekle(3);
 
         qualitydemyPage.loginButonu.click();
 

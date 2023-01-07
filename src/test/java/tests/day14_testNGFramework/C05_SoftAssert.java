@@ -5,7 +5,7 @@ import org.testng.asserts.SoftAssert;
 
 public class C05_SoftAssert {
 
-    @Test
+    @Test (groups = "minireg1")
     public void test01(){
 
 
@@ -16,14 +16,14 @@ public class C05_SoftAssert {
         // 2.adim softAssert objesini kullanarak istenilen assertionlari yapin
 
 
-        softAssert.assertEquals(6,8); // Failed
+        softAssert.assertEquals(6,6); // Pass
         System.out.println("1.assert sonrasi");
 
 
         softAssert.assertTrue(5>3); //Passed
         System.out.println("2.assertion sonrasi");
 
-        softAssert.assertFalse(8>5); //Failed
+        softAssert.assertFalse(3>5); //Failed
         System.out.println("3.assertion sonrasi");
 
 

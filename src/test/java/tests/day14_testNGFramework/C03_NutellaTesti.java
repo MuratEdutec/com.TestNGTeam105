@@ -11,7 +11,7 @@ import utilities.Driver;
 
 public class C03_NutellaTesti {
 
-    @Test (groups = "minireg1")
+    @Test (groups = {"minireg1", "minireg2", "smoke"})
     public void test01() {
 
         // amazon ana sayfaya gidin

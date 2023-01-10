@@ -22,7 +22,7 @@ public class C02_NegatifLoginTesti {
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
 
         qualitydemyPage.ilkLoginLinki.click();
-        qualitydemyPage.kullaniciEmailKutusu.sendKeys(ConfigReader.getProperty("qdGecersizUsernama"));
+        qualitydemyPage.kullaniciEmailKutusu.sendKeys(ConfigReader.getProperty("qdGecersizUsername"));
         qualitydemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecerliPassword"));
         WebElement cookieKabul = Driver.getDriver().findElement(By.xpath("//*[text()='Accept']"));
         cookieKabul.click();
@@ -47,7 +47,7 @@ public class C02_NegatifLoginTesti {
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
 
         qualitydemyPage.ilkLoginLinki.click();
-        qualitydemyPage.kullaniciEmailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsernama"));
+        qualitydemyPage.kullaniciEmailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
         qualitydemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword"));
 
         WebElement cookieKabul = Driver.getDriver().findElement(By.xpath("//*[text()='Accept']"));
@@ -70,7 +70,7 @@ public class C02_NegatifLoginTesti {
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
 
         qualitydemyPage.ilkLoginLinki.click();
-        qualitydemyPage.kullaniciEmailKutusu.sendKeys(ConfigReader.getProperty("qdGecersizUsernama"));
+        qualitydemyPage.kullaniciEmailKutusu.sendKeys(ConfigReader.getProperty("qdGecersizUsername"));
         qualitydemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword"));
 
         WebElement cookieKabul = Driver.getDriver().findElement(By.xpath("//*[text()='Accept']"));

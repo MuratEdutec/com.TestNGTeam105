@@ -21,7 +21,7 @@ public class C01_PozitifLoginTesti {
         QualitydemyPage qualitydemyPage=new QualitydemyPage();
 
         qualitydemyPage.ilkLoginLinki.click();
-        qualitydemyPage.kullaniciEmailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsernama"));
+        qualitydemyPage.kullaniciEmailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
         qualitydemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecerliPassword"));
         WebElement cookieKabul = Driver.getDriver().findElement(By.xpath("//*[text()='Accept']"));
         cookieKabul.click();
